@@ -1,0 +1,58 @@
+body {
+  margin: 1.5em;
+  font-family: 'poppins', sans-serif;
+  background: grey;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.logo {
+  float: left;
+  margin: 2em;
+  width: 2em;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[12];
+      grid-template-columns: repeat(12, auto);
+}
+
+header nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background: #9c8e76;
+  width: 50%;
+  z-index: 999;
+  text-align: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul a {
+  text-decoration: none;
+  font-size: 1em;
+  color: black;
+  padding: .75em 2em;
+  display: block;
+}
+
+header nav ul a:hover {
+  background: #3f3631;
+}
+/*# sourceMappingURL=main.css.map */
